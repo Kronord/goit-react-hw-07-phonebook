@@ -36,7 +36,7 @@ export const ContactForm = () => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    const newObj = { id: nanoid(), name: newName, number: phoneNumber };
+    const newObj = { id: nanoid(), name: newName, phone: phoneNumber };
     if (
       contactsState.find(
         ({ name }) => name.toLowerCase() === newName.toLowerCase()
